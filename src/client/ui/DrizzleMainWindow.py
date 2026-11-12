@@ -133,8 +133,9 @@ client_send_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 client_recv_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 client_send_socket.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
 client_recv_socket.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
-client_recv_socket.setsockopt(socket.SOL_SOCKET, socket.SO_PRIORITY, 0x06)
-client_send_socket.setsockopt(socket.SOL_SOCKET, socket.SO_PRIORITY, 0x06)
+if hasattr(socket, "SO_PRIORITY"):
+    client_recv_socket.setsockopt(socket.SOL_SOCKET, socket.SO_PRIORITY, 0x06)
+    client_send_socket.setsockopt(socket.SOL_SOCKET, socket.SO_PRIORITY, 0x06)
 
 # Mark packets with TOS value of IPTOS_THROUGHPUT and IPTOS_LOWDELAY to optimize for throughput and low delay
 client_recv_socket.setsockopt(socket.IPPROTO_IP, socket.IP_TOS, 0x10 | 0x08)
