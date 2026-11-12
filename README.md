@@ -7,11 +7,10 @@ _Drizzle is a lightweight file-sharing and messaging platform inspired by DC++._
 
 https://user-images.githubusercontent.com/56076061/154854653-22287ddf-0cdd-4334-b60b-21f8c1c12f9d.mp4
 
-## The Team
+## Windows Version
 
--   [Harsh Sharma](https://github.com/hs2361)
--   [Aaryak Shah](https://github.com/aaryak-shah)
--   [Anirudh Gautam](https://github.com/gautamanirudh)
+**Windows Version by:** Amrit Singh  
+**GitHub:** https://github.com/Amrit7733
 
 ## Technologies Used
 
@@ -72,7 +71,7 @@ Get notified if you receive a message or when a file is done downloading. (Of co
 Clone this repository
 
 ```sh
-git clone https://github.com/hs2361/Drizzle.git
+git clone https://github.com/Amrit7733/Drizzle.git
 cd Drizzle
 ```
 
